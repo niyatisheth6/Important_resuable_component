@@ -1,0 +1,22 @@
+.home {
+  @apply min-h-screen flex items-center justify-center flex-col gap-11;
+}
+
+.subHeading {
+  @apply text-prussianblue text-7xl;
+}
+.btn {
+  @apply py-8 px-24 rounded-xl text-3xl font-bold hover:bg-prussianblue text-white bg-bluesapphire disabled:opacity-20;
+}
+.btn:disabled {
+  @apply opacity-30;
+}
+.elements {
+  @apply my-10;
+}
+.elements ol {
+  @apply text-4xl text-prussianblue list-decimal;
+}
+.elements li {
+  @apply py-10;
+}
