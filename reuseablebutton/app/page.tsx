@@ -4,6 +4,8 @@ import style from "@/assets/css/home.module.css";
 import clsx from "clsx";
 
 export default function Home() {
+  console.log("hii");
+
   return (
     <div className={clsx(style.home, "container")}>
       <h1 className="heading">React js / Next js</h1>
