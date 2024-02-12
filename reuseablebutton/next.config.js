@@ -1,4 +1,16 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.js
+const path = require("path");
 
-export default nextConfig;
+module.exports = {
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      issuer: {
+        and: [/\.(js|ts|tsx)$/],
+      },
+      use: ["@svgr/webpack"],
+    });
+
+    return config;
+  },
+};

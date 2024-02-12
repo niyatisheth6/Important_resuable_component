@@ -2,7 +2,7 @@
 import clsx from "clsx";
 import React from "react";
 import style from "@/assets/css/buttons.module.css";
-import Button from "@/components/buttons-new/Button";
+import Button from "@/components/buttons/Button";
 
 function page() {
   return (

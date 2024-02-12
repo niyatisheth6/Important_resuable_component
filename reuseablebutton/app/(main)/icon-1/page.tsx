@@ -2,7 +2,7 @@ import clsx from "clsx";
 import style from "@/assets/css/buttons.module.css";
 import { CopyAiIcon } from "@/components/icons/Icon";
 
-function page() {
+function IconFirstPage() {
   return (
     <div className={clsx(style.buttons, "container flex flex-col gap-10")}>
       <h1 className="heading mb-5">Icons</h1>
@@ -16,4 +16,4 @@ function page() {
   );
 }
 
-export default page;
+export default IconFirstPage;

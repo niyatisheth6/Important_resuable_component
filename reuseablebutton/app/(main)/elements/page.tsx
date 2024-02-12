@@ -17,7 +17,9 @@ function ElementsPage() {
           <Link href="/icon-1">Add SVG icon using icon.tsx file</Link>
         </li>
         <li>
-          <Link href="/icon-2">Add SVG icon using React Component</Link>
+          <Link href="/icon-using-component">
+            Add SVG icon using React Component
+          </Link>
         </li>
       </ol>
     </div>
