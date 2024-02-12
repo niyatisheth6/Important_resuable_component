@@ -35,9 +35,9 @@ const variants: Variants = {
 };
 
 const size: Size = {
-  sm: "text-sm py-2 px-4",
-  md: "text-base py-4 px-8",
-  lg: "text-lg py-8 px-12",
+  sm: "py-2 px-4",
+  md: "py-4 px-8",
+  lg: "py-8 px-12",
 };
 
 const buttonVariants = (variant: keyof Variants, sizes: keyof Size) => {
