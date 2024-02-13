@@ -13,6 +13,9 @@ function ElementsPage() {
         <li>
           <Link href="/icon-using-component">SVG icon</Link>
         </li>
+        <li>
+          <Link href="/profile">Profile Image</Link>
+        </li>
       </ol>
     </div>
   );
