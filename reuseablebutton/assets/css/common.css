@@ -3,7 +3,28 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+.main_container {
+  max-width: 789px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .heading {
   @apply text-prussianblue text-6xl font-bold;
+}
+.buttons {
+  @apply my-10;
+}
+
+/* toast message  */
+.Toastify__progress-bar--success {
+  @apply !bg-prussianblue;
+}
+.Toastify__toast--success {
+  @apply text-prussianblue font-semibold;
+}
+.Toastify__toast--success .Toastify__toast-icon svg path {
+  @apply fill-prussianblue;
+}
+.Toastify__toast--error {
+  @apply text-red-500 font-semibold;
 }

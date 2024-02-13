@@ -15,8 +15,8 @@
   @apply my-10;
 }
 .elements ol {
-  @apply text-4xl text-prussianblue list-decimal;
+  @apply text-4xl text-prussianblue;
 }
 .elements li {
-  @apply py-10;
+  @apply py-5 bg-prussianblue text-white my-10 rounded-lg px-[30px];
 }

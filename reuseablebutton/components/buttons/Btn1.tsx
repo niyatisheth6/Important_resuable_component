@@ -1,11 +1,10 @@
 "use client";
-import style from "@/assets/css/buttons.module.css";
-import clsx from "clsx";
+
 import Buttons from "./Buttons";
 
 function Btn1() {
   return (
-    <div className={clsx(style.buttons, "container flex flex-col gap-10")}>
+    <div className="main_container flex flex-col gap-10 buttons">
       <h1 className="heading mb-5">Buttons using function</h1>
       <Buttons onClick={() => alert("hi")}>Button 1</Buttons>
       <Buttons variant="danger" size="lg" onClick={() => alert("hi")}>
