@@ -11,15 +11,7 @@ function ElementsPage() {
           <Link href="/buttons">Button</Link>
         </li>
         <li>
-          <Link href="/buttons-new">Button using npm package</Link>
-        </li>
-        <li>
-          <Link href="/icon-1">Add SVG icon using icon.tsx file</Link>
-        </li>
-        <li>
-          <Link href="/icon-using-component">
-            Add SVG icon using React Component
-          </Link>
+          <Link href="/icon-using-component">SVG icon</Link>
         </li>
       </ol>
     </div>

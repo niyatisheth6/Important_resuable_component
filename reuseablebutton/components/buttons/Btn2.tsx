@@ -2,9 +2,9 @@
 import clsx from "clsx";
 import React from "react";
 import style from "@/assets/css/buttons.module.css";
-import Button from "@/components/buttons/Button";
+import Button from "./Button";
 
-function page() {
+function Btn2() {
   return (
     <div className={clsx(style.buttons, "container flex flex-col gap-10")}>
       <h1 className="heading mb-5">Buttons using npm package</h1>
@@ -34,7 +34,7 @@ function page() {
   );
 }
 
-export default page;
+export default Btn2;
 
 // instal  this npm package
 

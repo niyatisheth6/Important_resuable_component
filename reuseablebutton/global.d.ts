@@ -1,4 +1,4 @@
-declare module "*.svg" {
+declare module "*.svg?url" {
   import * as React from "react";
 
   export const ReactComponent: React.FunctionComponent<
