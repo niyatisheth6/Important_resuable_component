@@ -27,6 +27,11 @@ function Btn1() {
       >
         Button 4
       </Buttons>
+      <h1 className="heading mb-5">Buttons used as link</h1>
+      <Buttons asLink href="/profile">
+        Link
+      </Buttons>
+      <hr />
     </div>
   );
 }

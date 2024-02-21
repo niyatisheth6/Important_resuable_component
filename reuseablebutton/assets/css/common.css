@@ -11,6 +11,9 @@
 .heading {
   @apply text-prussianblue text-6xl font-bold;
 }
+.heading-sm {
+  @apply text-prussianblue text-3xl font-bold;
+}
 .buttons {
   @apply my-10;
 }
@@ -27,4 +30,7 @@
 }
 .Toastify__toast--error {
   @apply text-red-500 font-semibold;
+}
+hr {
+  @apply border-2 border-prussianblue;
 }

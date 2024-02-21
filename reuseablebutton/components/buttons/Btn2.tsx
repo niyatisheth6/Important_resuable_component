@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Button from "./Button";
 
 function Btn2() {
@@ -27,6 +28,11 @@ function Btn2() {
       >
         Button 4
       </Button>
+      <h1 className="heading mb-5">Buttons used as link</h1>
+      <Button asLink href="/profile">
+        Link
+      </Button>
+     
     </div>
   );
 }

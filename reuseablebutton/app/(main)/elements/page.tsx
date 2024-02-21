@@ -6,7 +6,7 @@ function ElementsPage() {
   return (
     <div className={clsx(style.elements, "main_container")}>
       <h1 className="heading">Components</h1>
-      <ol>
+      <ul>
         <li>
           <Link href="/buttons">Button</Link>
         </li>
@@ -16,7 +16,10 @@ function ElementsPage() {
         <li>
           <Link href="/profile">Profile Image</Link>
         </li>
-      </ol>
+        <li>
+          <Link href="/custom">custom</Link>
+        </li>
+      </ul>
     </div>
   );
 }

@@ -1,0 +1,105 @@
+/* simple square checkbox */
+
+.custom_checkbox {
+  @apply relative flex items-center w-full;
+}
+.custom_checkbox span {
+  @apply bg-white border-prussianblue cursor-pointer h-6 absolute w-6 border-2 rounded-lg;
+}
+.checkbox_title {
+  @apply text-base font-semibold leading-[1.6rem] inline-block ml-5;
+}
+.custom_checkbox span:after {
+  @apply border-[0.188rem] border-white h-[0.375rem] left-1 absolute opacity-0 top-[0.375rem] w-3 border-t-0 border-r-0;
+  content: "";
+  transform: rotate(-45deg);
+}
+.custom_checkbox .check {
+  @apply invisible mr-6;
+}
+.custom_checkbox .check:checked + span {
+  @apply bg-prussianblue border-prussianblue;
+}
+.custom_checkbox .check:checked + span:after {
+  @apply opacity-100;
+}
+/* simple round checkbox */
+.custom_round_checkbox {
+  @apply relative flex items-center w-full;
+}
+.custom_round_checkbox span {
+  @apply bg-white border-prussianblue cursor-pointer h-6 absolute w-6 border-2 rounded-full flex justify-center items-center;
+}
+.custom_round_checkbox span:after {
+  @apply bg-white absolute rounded-full w-4 h-4;
+  content: "";
+}
+.custom_round_checkbox .check {
+  @apply invisible mr-6;
+}
+.custom_round_checkbox .check:checked + span {
+  @apply bg-white border-prussianblue;
+}
+.custom_round_checkbox .check:checked + span:after {
+  @apply opacity-100 bg-prussianblue;
+}
+/* multicard checkbox design  */
+.history_cards {
+  max-height: calc(100vh - 166px);
+}
+.history_card {
+  @apply p-4 bg-gray-200 text-gray-700 flex justify-between items-center w-full rounded-[0.875rem] border border-transparent hover:border hover:border-prussianblue;
+}
+.history_card h2 {
+  @apply text-md leading-[1.8rem]  overflow-hidden w-[18.125rem] maxSm:w-[12.5rem] font-bold mb-[0.375rem];
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.history_card p {
+  @apply text-sm;
+}
+/* -------------------------------------------- Radio Btn ---------------------------------------- */
+/* square radio btn  */
+.custom_radio {
+  @apply relative flex items-center w-full;
+}
+.custom_radio span {
+  @apply bg-white border-prussianblue cursor-pointer h-6 absolute w-6 border-2 rounded-lg;
+}
+.checkbox_title {
+  @apply text-base font-semibold leading-[1.6rem] inline-block ml-5;
+}
+.custom_radio span:after {
+  @apply border-[0.188rem] border-white h-[0.375rem] left-1 absolute opacity-0 top-[0.375rem] w-3 border-t-0 border-r-0;
+  content: "";
+  transform: rotate(-45deg);
+}
+.custom_radio .radio {
+  @apply invisible mr-6;
+}
+.custom_radio .radio:checked + span {
+  @apply bg-prussianblue border-prussianblue;
+}
+.custom_radio .radio:checked + span:after {
+  @apply opacity-100;
+}
+/* rounded radio btn  */
+.custom_round_radio {
+  @apply relative flex items-center w-full;
+}
+.custom_round_radio span {
+  @apply bg-white border-prussianblue cursor-pointer h-6 absolute w-6 border-2 rounded-full flex justify-center items-center;
+}
+.custom_round_radio span:after {
+  @apply bg-white absolute rounded-full w-4 h-4;
+  content: "";
+}
+.custom_round_radio .radio {
+  @apply invisible mr-6;
+}
+.custom_round_radio .radio:checked + span {
+  @apply bg-white border-prussianblue;
+}
+.custom_round_radio .radio:checked + span:after {
+  @apply opacity-100 bg-prussianblue;
+}

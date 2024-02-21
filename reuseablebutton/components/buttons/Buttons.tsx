@@ -1,11 +1,14 @@
 import clsx from "clsx";
 import React, { ButtonHTMLAttributes } from "react";
 import { Size, Variants } from "./types";
+import Link from "next/link";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
   variant?: keyof Variants;
   size?: keyof Size;
+  asLink?: boolean;
+  href?: string;
 };
 
 export default function Buttons({
@@ -13,13 +16,25 @@ export default function Buttons({
   className,
   variant = "primary",
   size = "md",
+  asLink,
+  href = "",
   ...props
 }: ButtonProps) {
+  const commonClasses = clsx(buttonVariants(variant, size), className);
+
+  if (asLink) {
+    return (
+      <Link
+        href={href}
+        className={commonClasses}
+        {...(props as React.HTMLAttributes<HTMLAnchorElement>)}
+      >
+        {children}
+      </Link>
+    );
+  }
   return (
-    <button
-      className={clsx(buttonVariants(variant, size), className)}
-      {...props}
-    >
+    <button className={commonClasses} {...props}>
       {children}
     </button>
   );

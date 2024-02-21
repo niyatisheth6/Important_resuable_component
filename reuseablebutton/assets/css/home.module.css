@@ -14,7 +14,7 @@
 .elements {
   @apply my-10;
 }
-.elements ol {
+.elements ul {
   @apply text-4xl text-prussianblue;
 }
 .elements li {

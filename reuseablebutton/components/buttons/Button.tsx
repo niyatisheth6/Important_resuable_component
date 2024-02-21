@@ -1,11 +1,14 @@
 import { VariantProps, cva } from "class-variance-authority";
 import clsx from "clsx";
+import Link from "next/link";
 import React, { ButtonHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
 type ButtonsNewProps = ButtonHTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof buttonVariants> & {
     children: React.ReactNode;
+    asLink?: boolean;
+    href?: string;
   };
 
 export default function Button({
@@ -13,13 +16,26 @@ export default function Button({
   className,
   variant,
   size,
+  asLink,
+  href = "",
   ...props
 }: ButtonsNewProps) {
+  const commonClasses = twMerge(
+    clsx(buttonVariants({ variant, size, className }))
+  );
+  if (asLink) {
+    return (
+      <Link
+        href={href}
+        className={commonClasses}
+        {...(props as React.HTMLAttributes<HTMLAnchorElement>)}
+      >
+        {children}
+      </Link>
+    );
+  }
   return (
-    <button
-      className={twMerge(clsx(buttonVariants({ variant, size, className })))}
-      {...props}
-    >
+    <button className={commonClasses} {...props}>
       {children}
     </button>
   );
